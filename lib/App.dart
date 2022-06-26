@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:calculatrice/providers/theme_provider.dart';
 import 'package:calculatrice/widgets/display.dart';
 import 'package:calculatrice/widgets/thememode_switch.dart';
@@ -6,7 +8,6 @@ import 'package:provider/provider.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     ThemeProvider themeProvider = Provider.of<ThemeProvider>(context);

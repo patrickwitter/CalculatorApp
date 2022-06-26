@@ -16,7 +16,9 @@ class AppTheme {
     scaffoldBackgroundColor: const Color(0xFFFFFFFF),
     backgroundColor: const Color(0xFFFFFFFF),
     primaryColor: const Color(0xFFbdbec0),
-    accentColor: const Color(0xFFbdbec0),
+    colorScheme: const ColorScheme.dark().copyWith(
+      secondary: const Color(0xFFbdbec0),
+    ),
     textTheme: const TextTheme(
       headline2: TextStyle(
         color: Color(0xFF060709),
@@ -43,7 +45,9 @@ class AppTheme {
     scaffoldBackgroundColor: const Color(0xFF22252d),
     backgroundColor: const Color(0xFFFFFFFF),
     primaryColor: const Color(0xFFbdbec0),
-    accentColor: const Color(0xFFbdbec0),
+    colorScheme: const ColorScheme.dark().copyWith(
+      secondary: const Color(0xFFbdbec0),
+    ),
     fontFamily: 'Mulish',
     textTheme: const TextTheme(
       headline2: TextStyle(
@@ -60,6 +64,9 @@ class AppTheme {
         color: Color(0xFFbdbec0),
         fontSize: 14,
         fontWeight: FontWeight.w400,
+      ),
+      button: TextStyle(
+        fontSize: 25,
       ),
     ),
   );
