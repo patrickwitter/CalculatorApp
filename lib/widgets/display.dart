@@ -1,41 +1,21 @@
+import 'package:calculatrice/data/buttons_data.dart';
 import 'package:calculatrice/providers/theme_provider.dart';
 import 'package:calculatrice/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:math_expressions/math_expressions.dart';
 
-class DisplayNumber extends StatefulWidget {
-  const DisplayNumber({Key? key}) : super(key: key);
+class Display extends StatefulWidget {
+  const Display({Key? key}) : super(key: key);
 
   @override
-  _DisplayNumberState createState() => _DisplayNumberState();
+  _DisplayState createState() => _DisplayState();
 }
 
-class _DisplayNumberState extends State<DisplayNumber> {
+class _DisplayState extends State<Display> {
   var computingText = '';
   var resultsText = '';
-  final List<dynamic> buttons = [
-    'C',
-    'plus_minus',
-    '%',
-    'diviser',
-    '7',
-    '8',
-    '9',
-    'X',
-    '4',
-    '5',
-    '6',
-    '-',
-    '1',
-    '2',
-    '3',
-    '+',
-    'undo',
-    '0',
-    '.',
-    '=',
-  ];
+
   @override
   Widget build(BuildContext context) {
     Color? textColor;
@@ -62,12 +42,14 @@ class _DisplayNumberState extends State<DisplayNumber> {
                   ),
                   Container(
                     alignment: Alignment.bottomRight,
-                    child: Text(
-                      resultsText,
-                      style: TextStyle(
-                          color: textColor,
-                          fontSize: 60,
-                          fontWeight: FontWeight.bold),
+                    child: FittedBox(
+                      child: Text(
+                        resultsText,
+                        style: TextStyle(
+                            color: textColor,
+                            fontSize: 60,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   )
                 ],

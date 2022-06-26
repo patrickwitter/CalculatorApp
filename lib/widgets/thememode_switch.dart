@@ -30,7 +30,7 @@ class _ModeSwitchState extends State<ModeSwitch> {
             children: [
               GestureDetector(
                 onTap: () {
-                  themeProvider.toogleTheme(isOn: true);
+                  themeProvider.toogleTheme(brightMode: true);
                 },
                 child: SizedBox(
                   height: 30,
@@ -42,7 +42,7 @@ class _ModeSwitchState extends State<ModeSwitch> {
               ),
               GestureDetector(
                 onTap: () {
-                  themeProvider.toogleTheme(isOn: false);
+                  themeProvider.toogleTheme(brightMode: false);
                 },
                 child: SizedBox(
                   height: 25,

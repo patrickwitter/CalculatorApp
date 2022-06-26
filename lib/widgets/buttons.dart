@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
+  const MyButton({
+    Key? key,
+    required this.color,
+    required this.text,
+    required this.textColor,
+    required this.isIcon,
+    required this.function,
+  }) : super(key: key);
+
   final Color color;
   final String text;
   final Color textColor;
   final bool isIcon;
-  final function;
-  const MyButton(
-      {Key? key,
-      required this.color,
-      required this.text,
-      required this.textColor,
-      required this.isIcon,
-      required this.function})
-      : super(key: key);
+  final Function() function;
 
   @override
   Widget build(BuildContext context) {
+    ThemeData themeData = Theme.of(context);
     return GestureDetector(
       onTap: function,
       child: Padding(
@@ -36,7 +38,8 @@ class MyButton extends StatelessWidget {
                         )
                       : Text(
                           text,
-                          style: TextStyle(color: textColor, fontSize: 25),
+                          style: themeData.textTheme.button!
+                              .copyWith(color: textColor),
                         )),
             )),
       ),

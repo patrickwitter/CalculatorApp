@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           body: Column(
             children: const [
               ModeSwitch(),
-              DisplayNumber(),
+              Display(),
             ],
           ),
         ),

@@ -5,8 +5,8 @@ class ThemeProvider extends ChangeNotifier {
 
   bool get isDarkMode => ThemeMode.dark == themeMode;
 
-  void toogleTheme({required bool isOn}) {
-    themeMode = isOn ? ThemeMode.light : ThemeMode.dark;
+  void toogleTheme({required bool brightMode}) {
+    themeMode = brightMode ? ThemeMode.light : ThemeMode.dark;
     notifyListeners();
   }
 }
@@ -32,6 +32,9 @@ class AppTheme {
         color: Color(0xFF5d5f63),
         fontSize: 14,
         fontWeight: FontWeight.w400,
+      ),
+      button: TextStyle(
+        fontSize: 25,
       ),
     ),
   );
