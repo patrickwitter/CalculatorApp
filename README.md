@@ -1,6 +1,11 @@
 # calculatrice
 
-A new Flutter project based on the design from dribble i [found](https://dribbble.com/shots/14709020-Calculator)
+Based on the design from dribble [here](https://dribbble.com/shots/14709020-Calculator)
+<br>
 
-![image](https://user-images.githubusercontent.com/63370801/147886611-6e6b4422-b535-4aa0-8751-5542942c99eb.png)
+
+
+
+https://user-images.githubusercontent.com/53438425/175832938-d8935fc7-af68-4759-b9bb-4cfb90a07969.mp4
+
 
