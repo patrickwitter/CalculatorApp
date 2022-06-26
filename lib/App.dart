@@ -1,6 +1,6 @@
 import 'package:calculatrice/providers/theme_provider.dart';
-import 'package:calculatrice/widgets/display_results.dart';
-import 'package:calculatrice/widgets/mode_switch.dart';
+import 'package:calculatrice/widgets/display.dart';
+import 'package:calculatrice/widgets/thememode_switch.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
