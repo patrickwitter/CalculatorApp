@@ -1,4 +1,4 @@
-# calculatrice
+# Calculator App
 
 Based on the design from dribble [here](https://dribbble.com/shots/14709020-Calculator)
 <br>
